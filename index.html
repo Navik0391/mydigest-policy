@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyDigest</title>
+    <style>
+      html {
+        color-scheme: light dark;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+      }
+
+      :root {
+        --bg-color: light-dark(#ffffff, #0f172a);
+        --text-color: light-dark(#1e293b, #f8fafc);
+        --card-bg: light-dark(#f1f5f9, #1e293b);
+        --accent-color: light-dark(#0284c7, #38bdf8);
+      }
+
+      body {
+        background-color: var(--bg-color);
+        color: var(--text-color);
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+      }
+
+      .card {
+        background-color: var(--card-bg);
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+      }
+
+      h1 {
+        color: var(--accent-color);
+        margin-bottom: 16px;
+        font-size: 1.8rem;
+      }
+
+      p {
+        line-height: 1.5;
+        opacity: 0.9;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1>Developer / Разработчик: BuildLab</h1>
+      <p>
+        Contact Email: buildlab13@gmail.com
+      </p>
+    </div>
+  </body>
+</html>
